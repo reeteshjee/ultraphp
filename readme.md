@@ -29,7 +29,8 @@ Ultra is a lightweight, custom PHP MVC framework designed to help you build scal
 
 4. Start the built-in development server:
     ```bash
-    php serve.php
+    cd ultraphp
+    ./ serve
     ```
     By default, it will run at `http://localhost:3333/`.
 
