@@ -28,6 +28,7 @@ if ($config['debug']) {
     error_reporting(0); // Suppress all errors
 }
 
+
 // Initialize the framework
 $framework = new Ultra($db,$config,$route);
 

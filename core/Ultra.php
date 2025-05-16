@@ -4,10 +4,11 @@ use PDO;
 use PDOException;
 
 class Ultra {
-    private $routes = [];
-    private $databases = [];
-    private $config;
-    private $models = [];
+    protected static $instance;
+    protected $routes = [];
+    protected $databases = [];
+    protected $config;
+    protected $models = [];
 
     /**
      * Constructor: Initialize the framework with optional database configurations.
@@ -22,6 +23,12 @@ class Ultra {
         if (!empty($dbConfigs)) {
             $this->connectDatabases($dbConfigs);
         }
+        self::$instance = $this;
+    }
+
+
+    public static function getInstance(){
+        return self::$instance;
     }
 
     /**

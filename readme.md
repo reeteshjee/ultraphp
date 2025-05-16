@@ -1,4 +1,4 @@
-# Ultra PHP Framework
+# UltraPHP Framework
 
 Ultra is a lightweight, custom PHP MVC framework designed to help you build scalable and maintainable web applications quickly and efficiently. It supports routing, database connections, models, views, and controllers with clean and simple syntax.
 

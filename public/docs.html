@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>UltraPhP Framework - Professional Documentation</title>
+  <title>UltraPHP Framework - Professional Documentation</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
   <style>
     :root {
       --primary: #3a6ea5;
@@ -57,7 +60,7 @@
       background: rgba(0, 0, 0, 0.2);
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
     }
 
     .sidebar-header h1 {
@@ -67,6 +70,7 @@
       display: flex;
       align-items: center;
       color: white;
+      border-bottom: none;
     }
 
     .sidebar-header h1 i {
@@ -344,6 +348,9 @@
     	word-break: normal;
     	overflow-wrap: normal;
     }
+    pre code{
+      padding:20px;
+    }
 
     /* Lists */
     ul, ol {
@@ -584,7 +591,7 @@
 
 <nav id="sidebar">
   <div class="sidebar-header">
-    <h1><i class="fas fa-bolt"></i> UltraPhP <span class="framework-version">v1.0</span></h1>
+    <h1><i class="fas fa-bolt"></i> UltraPHP <span class="framework-version">v1.0</span></h1>
     <button class="menu-toggle" id="menuToggle">
       <i class="fas fa-times"></i>
     </button>
@@ -653,7 +660,7 @@
       <div class="content-actions">
         <select class="version-select">
           <option>v1.0 (Latest)</option>
-          <option>v0.9 (Beta)</option>
+          <!--<option>v0.9 (Beta)</option>-->
         </select>
         <button class="menu-toggle" id="showMenu">
           <i class="fas fa-bars"></i>
@@ -670,7 +677,7 @@
         <span>Introduction</span>
       </div>
       
-      <h1>Introduction to UltraPhP Framework</h1>
+      <h1>Introduction to UltraPHP Framework</h1>
       
       <div class="cards-grid">
         <div class="feature-card">
@@ -689,13 +696,13 @@
         </div>
       </div>
       
-      <p>Welcome to the comprehensive documentation for UltraPhP, a lightweight yet powerful MVC framework for modern PHP applications. This guide will help you get started quickly and make the most of the framework's features.</p>
+      <p>Welcome to the comprehensive documentation for UltraPHP, a lightweight yet powerful MVC framework for modern PHP applications. This guide will help you get started quickly and make the most of the framework's features.</p>
       
-      <p>UltraPhP is designed with simplicity and performance in mind, providing developers with the right tools to build robust web applications without unnecessary complexity.</p>
+      <p>UltraPHP is designed with simplicity and performance in mind, providing developers with the right tools to build robust web applications without unnecessary complexity.</p>
 
       <div class="callout callout-info">
         <h4><i class="fas fa-info-circle"></i> Framework Overview</h4>
-        <p>This documentation covers UltraPhP v1.0, which includes a complete MVC architecture, database abstraction layer, routing system, and helper utilities to accelerate your development process.</p>
+        <p>This documentation covers UltraPHP v1.0, which includes a complete MVC architecture, database abstraction layer, routing system, and helper utilities to accelerate your development process.</p>
       </div>
     </section>
 
@@ -708,7 +715,7 @@
       
       <h1>Installation</h1>
       
-      <p>Getting started with UltraPhP is straightforward. Follow these steps to set up your first project:</p>
+      <p>Getting started with UltraPHP is straightforward. Follow these steps to set up your first project:</p>
       
       <div class="card">
         <h3>System Requirements</h3>
@@ -746,7 +753,7 @@ cd my-project</code></pre>
       </div>
       
       <h3>Step 4: Verify Installation</h3>
-      <p>Navigate to your project URL in a web browser. You should see the UltraPhP welcome page if everything is set up correctly.</p>
+      <p>Navigate to your project URL in a web browser. You should see the UltraPHP welcome page if everything is set up correctly.</p>
       
       <div class="callout callout-tip">
         <h4><i class="fas fa-lightbulb"></i> Quick Tip</h4>
@@ -764,7 +771,7 @@ cd my-project</code></pre>
       
       <h1>Configuration</h1>
       
-      <p>UltraPhP uses configuration files to manage various aspects of your application. These files are located in the <code>config</code> directory.</p>
+      <p>UltraPHP uses configuration files to manage various aspects of your application. These files are located in the <code>config</code> directory.</p>
 
       <h2 id="db-config">Database Configuration</h2>
       
@@ -825,11 +832,11 @@ return [
       
       <h1>Core Concepts</h1>
       
-      <p>UltraPhP follows the Model-View-Controller (MVC) architectural pattern to separate concerns and maintain clean, organized code.</p>
+      <p>UltraPHP follows the Model-View-Controller (MVC) architectural pattern to separate concerns and maintain clean, organized code.</p>
 
       <h2 id="routing">Routing</h2>
       
-      <p>Routing maps URLs to specific controller methods. UltraPhP parses the URL to determine which controller and method to invoke.</p>
+      <p>Routing maps URLs to specific controller methods. UltraPHP parses the URL to determine which controller and method to invoke.</p>
       
       <div class="callout callout-info">
         <h4><i class="fas fa-info-circle"></i> URL Structure</h4>
@@ -891,7 +898,7 @@ class Home extends Ultra {
 
       <h2 id="models">Models</h2>
       
-      <p>Models interact with the database, encapsulating data queries. UltraPhP provides a <code>QueryBuilder</code> class for fluent database interactions.</p>
+      <p>Models interact with the database, encapsulating data queries. UltraPHP provides a <code>QueryBuilder</code> class for fluent database interactions.</p>
       
       <div class="code-block">
         <div class="code-header">
@@ -950,7 +957,7 @@ class NewsModel {
       </div>
       <h2 id="views">Views</h2>
       
-      <p>Views contain the HTML and presentation logic of your application. UltraPhP uses a simple template system with .php view files.</p>
+      <p>Views contain the HTML and presentation logic of your application. UltraPHP uses a simple template system with .php view files.</p>
       
       <div class="code-block">
         <div class="code-header">
@@ -962,10 +969,10 @@ class NewsModel {
         <pre><code class="language-php">&lt;!DOCTYPE html>
 &lt;html>
 &lt;head>
-  &lt;title>Welcome to UltraPhP&lt;/title>
+  &lt;title>Welcome to UltraPHP&lt;/title>
 &lt;/head>
 &lt;body>
-  &lt;h1>Welcome to UltraPhP Framework&lt;/h1>
+  &lt;h1>Welcome to UltraPHP Framework&lt;/h1>
   
   &lt;h2>Latest News&lt;/h2>
   &lt;ul>
@@ -1007,7 +1014,7 @@ public function index() {
       
       <h1>Helpers & Functions</h1>
       
-      <p>UltraPhP includes several helper functions to make common tasks easier:</p>
+      <p>UltraPHP includes several helper functions to make common tasks easier:</p>
       
       <table>
         <thead>
@@ -1061,7 +1068,7 @@ public function index() {
       
       <h1>Libraries</h1>
       
-      <p>UltraPhP includes several built-in libraries to handle common functionality:</p>
+      <p>UltraPHP includes several built-in libraries to handle common functionality:</p>
       
       <div class="cards-grid">
         <div class="feature-card">
@@ -1239,7 +1246,7 @@ class Post extends Ultra {
       
       <h1>.htaccess Setup</h1>
       
-      <p>To use UltraPhP's clean URL routing, you'll need an appropriate .htaccess file in your public directory:</p>
+      <p>To use UltraPHP's clean URL routing, you'll need an appropriate .htaccess file in your public directory:</p>
       
       <div class="code-block">
         <div class="code-header">
@@ -1275,7 +1282,7 @@ RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]</code></pre>
     </section>
 
     <div class="footer">
-      <p>&copy; 2025 UltraPhP Framework. All rights reserved.</p>
+      <p>&copy; 2025 UltraPHP Framework. All rights reserved.</p>
       <div class="footer-links">
         <a href="#">GitHub</a>
         <a href="#">Community</a>
