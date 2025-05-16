@@ -20,7 +20,7 @@ Ultra is a lightweight, custom PHP MVC framework designed to help you build scal
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/ultra-php-framework.git
+    git clone https://github.com/reeteshjee/ultraphp.git
     ```
 
 2. Configure your database and framework settings in the config files.
@@ -31,7 +31,7 @@ Ultra is a lightweight, custom PHP MVC framework designed to help you build scal
     ```bash
     php serve.php
     ```
-    By default, it will run at `http://localhost:6000/`.
+    By default, it will run at `http://localhost:3333/`.
 
 ---
 
@@ -44,4 +44,67 @@ The complete user guide with detailed explanation, code examples, and configurat
 ---
 
 ## Directory Structure
+
+ultra
+    app
+        controllers
+             Home.php
+             Postman.php
+        helpers
+             cache.php
+             file.php
+             general.php
+             request.php
+             response.php
+             url.php
+        models
+             NewsModel.php
+        views
+             home.php
+    config
+              config.php
+              constants.php
+              db.php
+    core
+              QueryBuilder.php
+              Ultra.php
+    public
+              .htaccess
+              index.php
+    writable
+              cache
+              logs
+    autoload.php
+    routes.php
+
+---
+
+## Requirements
+
+- PHP 8.0 or higher
+- PDO extension enabled
+- MySQL or compatible database
+
+---
+
+## Contributing
+
+Feel free to open issues or submit pull requests to improve the framework!
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Contact
+
+For questions or support, reach out to [riteshghimire92@gmail.com](mailto:riteshghimire92@gmail.com)
+
+---
+
+Happy coding with Ultra! 🚀
+
 
