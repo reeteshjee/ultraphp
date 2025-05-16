@@ -102,7 +102,7 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For questions or support, reach out to [riteshghimire92@gmail.com](mailto:riteshghimire92@gmail.com)
+For questions or support, reach out to [reeteshghimire@gmail.com](mailto:reeteshghimire@gmail.com)
 
 ---
 
