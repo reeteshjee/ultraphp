@@ -1,0 +1,29 @@
+# Ignore environment config files containing secrets
+/config/config.php
+/config/constants.php
+/config/db.php
+
+/.env
+
+# Ignore logs, cache and uploads
+/writable/logs/
+/writable/cache/
+/public/uploads/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+
+# Ignore compiled files and temp files
+*.log
+*.tmp
+*.cache
+
+
