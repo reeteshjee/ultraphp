@@ -94,7 +94,7 @@
         </div>
         
         <div class="buttons">
-            <a href="/docs" class="btn btn-primary">Docs</a>
+            <a href="/docs.html" class="btn btn-primary">Docs</a>
             <!--<a href="/docs" class="btn btn-secondary">Docs</a>-->
         </div>
     </div>
