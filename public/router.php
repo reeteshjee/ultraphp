@@ -1,12 +1,14 @@
 <?php
-// Point to the /public folder for serving static files
-$publicPath = __DIR__ . '/public';
-$url = parse_url($_SERVER['REQUEST_URI']);
-$file = $publicPath . $url['path'];
+// serve/router.php
 
-if (php_sapi_name() === 'cli-server' && is_file($file)) {
-    return false; // Let PHP's built-in server serve static files
+$publicPath = realpath(__DIR__ . '/../public'); // Full path to /public
+$requestUri = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+$filePath = realpath($publicPath . $requestUri);
+
+// If it's a static file that exists and is inside /public, serve it
+if ($filePath && is_file($filePath) && str_starts_with($filePath, $publicPath)) {
+    return false; // Let PHP's built-in server serve it
 }
 
-// Load the main index.php from /public
-require_once 'index.php';
+// Otherwise route to index.php
+require_once $publicPath . '/index.php';

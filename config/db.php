@@ -2,11 +2,11 @@
 
 return [
     'default' => [
-        'connect' => true,
+        'connect' => false,
         'host' => '127.0.0.1',
-        'dbname' => 'kheladi',
-        'user' => 'root',
-        'password' => 'test',
+        'dbname' => 'DB',
+        'user' => 'USER',
+        'password' => 'PASSWORD',
     ],
     // You can add more databases here if needed
     /*'another_db' => [

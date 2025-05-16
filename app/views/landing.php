@@ -90,13 +90,12 @@
         <p class="description">Your development environment is set up and ready to go!</p>
         
         <div class="code-block">
-            $ php serve<br>
-            # Start building your application
+            Ultra is a lightweight, custom PHP MVC framework designed to help you build scalable and maintainable web applications quickly and efficiently.
         </div>
         
         <div class="buttons">
-            <a href="" class="btn btn-primary">Quick Start</a>
-            <a href="" class="btn btn-secondary">Docs</a>
+            <a href="/docs" class="btn btn-primary">Docs</a>
+            <!--<a href="/docs" class="btn btn-secondary">Docs</a>-->
         </div>
     </div>
 </body>
